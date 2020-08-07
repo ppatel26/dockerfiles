@@ -20,7 +20,7 @@ RUN dpkg --add-architecture i386 && \
     apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y build-essential && \
-    apt-get install -y curl rlwrap emacs screen wget gzip unzip && \
+    apt-get install -y git curl rlwrap emacs screen wget gzip unzip && \
     apt-get install -y libssl1.0.0:i386 && \
     cd /usr/lib/i386-linux-gnu/ && \
     ln -s libssl.so.1.0.0 libssl.so && \
