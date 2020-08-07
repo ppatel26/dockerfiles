@@ -8,6 +8,9 @@ COPY emacs /root/
 
 ENV PATH=${PATH}:/root/q/l32/
 
+# expose port 5000 for kdb process
+EXPOSE 5000
+
 # > uname -a
 # For 32 bit Ex: "Linux discworld 2.6.38-8-generic #42-Ubuntu SMP Mon Apr 11 03:31:50 UTC 2011 i686 i686 i386 GNU/Linux"  
 # For 64 bit Ex: "Linux discworld 2.6.38-8-generic #42-Ubuntu SMP Mon Apr 11 03:31:50 UTC 2011 x86_64 x86_64 x86_64 GNU/Linux"
@@ -27,13 +30,6 @@ RUN dpkg --add-architecture i386 && \
     rm linuxx86.zip && \
     wget https://raw.githubusercontent.com/psaris/q-mode/master/q-mode.el && \
     mv emacs .emacs
-
-
-
-# expose port 5000 for kdb process
-EXPOSE 5000
-
-
 
 
 
