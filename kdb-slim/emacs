@@ -18,7 +18,7 @@ There are two things you can do about this warning:
 (package-initialize)
 
 ;; q-mode Setup
-(add-to-list 'load-path "/home/fuxi/")
+(add-to-list 'load-path "/root/")
 (autoload 'q-mode "q-mode")
 (add-to-list 'auto-mode-alist '("\\.[kq]\\'" . q-mode))
 
