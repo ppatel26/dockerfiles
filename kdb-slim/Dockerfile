@@ -4,9 +4,10 @@ FROM ubuntu:bionic
 LABEL maintainer="Parv Patel <parvpatel@live.com>" \
       discription="kdbq+ over ubuntu:bionic 18.04 (LTS) + q-mode enabled emacs"
 
-COPY emacs /root/
+COPY init.el /root/.emacs.d/
 
 ENV PATH=${PATH}:/root/q/l32/
+ENV QHOME=/root/q
 
 # expose port 5000 for kdb process
 EXPOSE 5000
@@ -28,9 +29,9 @@ RUN dpkg --add-architecture i386 && \
     wget https://kx.com/347_d0szre-fr8917_llrsT4Yle-5839sdX/3.6/linuxx86.zip && \
     unzip linuxx86.zip && \
     rm linuxx86.zip && \
-    wget https://raw.githubusercontent.com/psaris/q-mode/master/q-mode.el && \
-    mv emacs .emacs
-
-
-
- 
+    cd /root/q/l32/ && \
+    wget https://github.com/KxSystems/kdb/raw/master/l32/qcon && \
+    cd /root/.emacs.d/ && \
+    git clone https://github.com/psaris/q-mode.git && \
+    cd /root/ && \
+    touch .screenrc && echo "shell /bin/bash" > .screenrc 
