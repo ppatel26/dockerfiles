@@ -4,7 +4,7 @@
 Setup a latest verion of `julia` REPL with data-science + ML libraries on **Ubuntu:Bionic 18.04 LTE** <font size="1">(Base Image)</font>
 
 > Pre build image is uploaded on DockerHub for download <br>
-*link*: https://hub.docker.com/r/ppatel26/ml-julia <br>
+*link*: https://hub.docker.com/r/ppatel26/ml-julia <br> <br>
 `> docker pull ppatel26/ml-julia`
 
 <br>
