@@ -81,7 +81,7 @@ Utility package for generating, loading, partitioning, and processing Machine Le
 
 3. <a href="https://github.com/joshday/OnlineStats.jl" target="_blank">OnlineStats</a> <br> Online algorithms are well suited for streaming data or when data is too large to hold in memory.
 
-4. <a href="https://github.com/JuliaPlots/Plots.j"l target="_blank">Plots</a> <br> 
+4. <a href="https://github.com/JuliaPlots/Plots.jl" target="_blank">Plots</a> <br> 
 Plots is a visualization interface and toolset for Julia
 
 5. <a href="https://github.com/JuliaDatabases/ODBC.jl" target="_blank">ODBC</a> <br> 
