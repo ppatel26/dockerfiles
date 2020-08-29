@@ -100,4 +100,4 @@ Quantitative economic modeling in Julia
 State-of-the-art differential equations ecosystem
 
 2. <a href="https://github.com/JuliaMath/IterativeSolvers.jl" target="_blank">IterativeSolvers</a> <br> 
-Iterative algorithms for solving linear systems, eigensystems, and singular vsalue problems.
+Iterative algorithms for solving linear systems, eigensystems, and singular value problems.
